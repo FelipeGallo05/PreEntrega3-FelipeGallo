@@ -1,0 +1,31 @@
+.nav{
+    @include flex(row,space-between,center,10px);
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    height: 60px;
+    padding: 20px;
+    background-color: $ind-color;
+    font-family: "Helvetica", cursive;
+    color: black;
+    .nav-link{
+        text-decoration: none;
+        color: black;
+        font-weight: 1000;
+        font-size: 1.2rem;
+    }
+    .nav-list{
+        @include flex(row,center,center,10px);
+        list-style: none;
+    }
+
+    .nav-list a{
+        text-decoration: none;
+        list-style:none;
+        color: black;
+        font-weight: 750;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+}
